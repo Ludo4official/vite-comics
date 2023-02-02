@@ -88,9 +88,22 @@ import AppBlueSection from './AppBlueSection.vue';
 
     </div>
 
-    <div class="signUp">
-
+    <div class="ultCnt">
+        <div class="signUp">
+            <div class="sign">
+                Sign-Up Now
+            </div>
+            <div class="socials">
+                <div class="follow">Follow Us!</div>
+                <img src="../assets/img/footer-facebook.png" alt="">
+                <img src="../assets/img/footer-periscope.png" alt="">
+                <img src="../assets/img/footer-pinterest.png" alt="">
+                <img src="../assets/img/footer-twitter.png" alt="">
+                <img src="../assets/img/footer-youtube.png" alt="">
+            </div>
+        </div>
     </div>
+    
 
 </template>
 
@@ -110,7 +123,7 @@ import AppBlueSection from './AppBlueSection.vue';
             height: 100%;
             margin: 0 auto;
             display: flex;
-        }
+        
 
             .infos {
                 width: 50%;
@@ -137,26 +150,80 @@ import AppBlueSection from './AppBlueSection.vue';
                             color: white;
                             opacity: 0.6;
                         }
+
                     }
+                }
 
                     .info-1-2 {
                         margin-top: 40px;
                     }
-                }
             }
+        }
+    }
 
             .DC {
                 width: 50%;
                 height: 100%;
                 opacity: 0.5;
+
+                img {
+                    width: 70%;
+                }
             }
 
-    }
-
-    .signUp {
+    .ultCnt {
         height: 100px;
         background-color: black;
-        z-index: 1;
+         
+        .signUp {
+            width: 70%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+
+            .sign {
+                color: white;
+                border: 2px solid #0c7cec;
+                padding: 10px 20px;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: #0c7cec;
+                    color: black;
+                    font-weight: bold;
+                }
+            }
+
+            .socials {
+                display: flex;
+                align-items: center;
+
+                .follow {
+                    color: #0c7cec;
+                    font-weight: bold;
+                    margin-right: 20px;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: black;
+                        background-color: #0c7cec;
+                        padding: 10px 20px;
+                    }
+                }
+
+                img {
+                    padding: 10px;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        
+        }
     }
 
 </style>
