@@ -33,8 +33,8 @@
         width: 100%;
         background-color: black;
         display: flex;
-            align-items: center;
-            justify-content: center;
+        align-items: center;
+        justify-content: center;
 
         .title {
             color: white;

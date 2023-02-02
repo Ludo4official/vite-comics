@@ -35,7 +35,7 @@ export default {
 
 </template>
 
-<style>
+<style lang="scss">
 
   * {
     margin: 0;
