@@ -111,7 +111,7 @@ import AppBlueSection from './AppBlueSection.vue';
 
     .footer {
         width: 100%;
-        height: calc(100% - 420px);
+        min-height: calc(100% - 420px);
         background-image: url(../assets/img/footer-bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;

@@ -4,14 +4,59 @@
 
         name:'AppHeader',
         data() {
-
             return {
-                
+                links: [
+                    {
+                    title: 'characters',
+                    url: '#'
+                    },
+                    {
+
+                    title: 'comics',
+                    url: '#'
+                    },
+                    {
+                    title: 'movies',
+                    url: '#'
+                    },
+                    {
+                    title: 'tv',
+                    url: '#'
+                    },
+                    {
+
+                    title: 'games',
+                    url: '#'
+                    },
+                    {
+
+                    title: 'collectibles',
+                    url: '#'
+                    },
+                    {
+
+                    title: 'videos',
+                    url: '#'
+                    },
+                    {
+
+                    title: 'fans',
+                    url: '#'
+                    },
+                    {
+
+                    title: 'news',
+                    url: '#'
+                    },
+                    {
+
+                    title: 'shop',
+                    url: '#'
+                    }
+                ]
             };
-
-        },
-
-};
+        }
+    };
 
 </script>
 
@@ -23,17 +68,8 @@
         </div>
         <div class="link">
             <ul>
-                <li>
-                    <a href="#">characters</a>
-                    <a href="#">comics</a>
-                    <a href="#">movies</a>
-                    <a href="#">tv</a>
-                    <a href="#">games</a>
-                    <a href="#">collectibles</a>
-                    <a href="#">videos</a>
-                    <a href="#">fans</a>
-                    <a href="#">news</a>
-                    <a href="#">shop</a>
+                <li v-for="link in links">
+                    <a :href="links.url">{{ link.title }}</a>
                 </li>
             </ul>
         </div>
@@ -64,6 +100,7 @@
 
         ul {
             list-style: none;
+            display: flex;
 
             li > a {
                 text-decoration: none;
